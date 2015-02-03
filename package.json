@@ -1,0 +1,30 @@
+{
+  "name": "level-leaflet",
+  "description": "A simple mapping application for finding National Parks and Historic Sites, powered by leveldb and Leaflet maps",
+  "version": "0.1.0",
+  "private": false,
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
+  "dependencies": {
+    "config-multipaas": "0.1.0",
+    "level": "^0.18.0",
+    "level-geo": "0.0.3",
+    "restify": "^2.8.3"
+  },
+  "devDependencies": {
+    "tap": "^0.4.13"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryanj/restify-postGIS.git"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "build": "npm run initdb",
+    "flushdb": "node bin/flushdb.js",
+    "initdb": "node bin/bootstrap.js"
+  },
+  "main": "server.js"
+}
